@@ -1,0 +1,70 @@
+.record_modal_modal {
+  position: fixed;
+  width: 96vw;
+  height: 90vh;
+  top: 5vh;
+  left: 2vw;
+  border: 1px solid #666;
+  border-radius: 1rem;
+  background: #333;
+  box-shadow: 0 0 5rem black;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.record_modal_close {
+  color: red;
+  font-size: 2rem;
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
+}
+
+.record_modal_title {
+  text-align: center;
+}
+
+.record_modal_inputBox {
+  color: #eee;
+}
+
+.record_modal_inputBox > label {
+  margin: 1rem 0 .25rem;
+  display: block;
+}
+
+.record_modal_inputBox > input {
+  display: block;
+  font-size: 3rem;
+  color: #eee;
+  width: 100%;
+  border: 1px solid #666;
+  border-radius: 0.5rem;
+  box-sizing:border-box;
+  padding: .25rem;
+  background: #444;
+  margin-bottom: 1rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.record_modal_inputBox > input::-webkit-outer-spin-button,
+.record_modal_inputBox > .record_modal_inputBox > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.record_modal_inputBox > input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.record_modal_save {
+  color: #eee;
+  background-color: rgb(46, 166, 130);
+  padding: 1rem 2rem;
+  text-align: center;
+  margin: 2rem auto;
+  border-radius: .5rem;
+  display: block;
+  font-size: 2rem;
+}

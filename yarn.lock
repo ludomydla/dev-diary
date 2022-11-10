@@ -576,6 +576,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dayjs@npm:^1.11.6":
+  version: 1.11.6
+  resolution: "dayjs@npm:1.11.6"
+  checksum: 18bdfd927009b68eab08dca578e421d4a581cefcbe9337f54c5d9e0d941ffb6b221c4b2c1cab15cdd9d419940e768ac4c984531461a90bbe1c158b75fe160580
+  languageName: node
+  linkType: hard
+
 "debug@npm:^2.6.9":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
@@ -630,9 +637,11 @@ __metadata:
     "@types/node": 18.11.9
     "@types/react": 18.0.25
     "@types/react-dom": 18.0.8
+    dayjs: ^1.11.6
     eslint: 8.27.0
     eslint-config-next: 13.0.2
     next: 13.0.2
+    postgres: ^3.3.1
     react: 18.2.0
     react-dom: 18.2.0
     typescript: 4.8.4
@@ -1904,6 +1913,13 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: fe58766ff32e4becf65a7d57678995cfd239df6deed2fe0557f038b47c94e4132e7e5f68b5aa820c13adfec32e523b693efaeb65798efb995ce49ccd83953816
+  languageName: node
+  linkType: hard
+
+"postgres@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "postgres@npm:3.3.1"
+  checksum: 3a279758ce7ef1d567f9936a34cdbbacd8fba901c3e8f84784717755a9919b2ceb111fe3be290c5f555f7ce879b2ed6a1a17a9f0c71fae762a3e833aa96ea533
   languageName: node
   linkType: hard
 

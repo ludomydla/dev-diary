@@ -1,0 +1,44 @@
+.dashboard_meter_wrapper {
+  position: relative;
+  padding: .5rem;
+  width: calc(100% - 1rem);
+  box-sizing: border-box;
+}
+
+.dashboard_meter_average_value {
+  font-size: 8rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.dashboard_meter_average_metric {
+  text-align: center;
+  font-size: .75rem;
+  font-style: italic;
+}
+
+.dashboard_meter_tuple {
+  display: flex;
+  justify-content: space-between;
+  margin: .5rem 0;
+}
+
+.dashboard_meter_addButton {
+  background-color: rgb(66, 164, 209);
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  left: calc(50% - 35px);
+  color: white;
+  width: 70px;
+  height: 70px;
+  font-size: 3.5rem;
+}
+
+@media screen and (orientation:landscape) {
+  .dashboard_meter_addButton {
+    bottom: auto;
+    top: 85vh;
+  }
+}

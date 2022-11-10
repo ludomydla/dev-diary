@@ -1,0 +1,48 @@
+.dashboard_halfnhalf {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.dashboard_halfnhalf > * {
+  width: 100vw;
+  height: 50vh;
+}
+
+@media screen and (orientation:landscape) {
+  .dashboard_halfnhalf {
+    flex-direction: row;
+  }
+
+  .dashboard_halfnhalf > * {
+    width: 50vw;
+    height: 100vh;
+  }
+}
+
+.dashboard_list {
+  list-style-type: none;
+}
+
+.dashboard_moreButton {
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(66, 164, 209);
+  font-size: 2rem;
+}
+
+.dashboard_hover_item {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  list-style-type: none;
+}
+
+.dashboard_hover_item > .dashboard_moreButton {
+  border-radius: .75rem;
+  padding: .5rem 1rem;
+  opacity: .7;
+}

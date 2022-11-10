@@ -1,0 +1,51 @@
+.loader_background {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #0001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes border {
+  from {
+    border-radius: 0%;
+  }
+  to {
+    border-radius: 50%;
+  }
+}
+
+.loader_spinner {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: 5px dotted rgb(66, 164, 209);
+  border-width: 5px;
+  border-style: solid;
+  border-top-color: rgb(46, 166, 130);
+  border-bottom-color: rgb(46, 166, 130);
+  border-left-color: rgb(66, 164, 209);
+  border-right-color: rgb(66, 164, 209);
+  border-radius: 50%;
+  transform: rotate(0deg);
+  animation-name: spin, border;
+  animation-duration: 2s, 1.5s;
+  animation-timing-function: cubic-bezier(.45,.05,.55,.95), cubic-bezier(.65,.05,.36,1);
+  animation-iteration-count: infinite, infinite;
+  animation-direction: normal, alternate;
+  animation-fill-mode: forwards, none;
+  animation-play-state: running, running;
+}
