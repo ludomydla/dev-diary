@@ -35,8 +35,10 @@ export default function DashboardMeter(
         <span>Gas amount</span>
         <span>{`${Number(totalConsumption).toFixed(2)} l`}</span>
       </p>
-      <p>{`It all costs: ${Number(totalPrice).toFixed(2)} €`}</p>
-      <button className={styles.dashboard_meter_addButton} onClick={onAddNewRecord}>+</button>
+      <p className={styles.dashboard_meter_tuple}>{`It all costs: ${Number(totalPrice).toFixed(2)} €`}</p>
+      <button className={styles.dashboard_meter_addButton} onClick={onAddNewRecord}>
+        <span className={styles.dashboard_meter_addButton_content}>+</span>
+      </button>
     </div>
   );
 }

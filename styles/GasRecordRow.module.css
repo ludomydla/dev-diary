@@ -6,6 +6,10 @@
   padding: 10px;
 }
 
+.gas_record_row_wrapper:first-of-type {
+  border-top: 0;
+}
+
 .gas_record_row_what {
   width: 50%;
 }

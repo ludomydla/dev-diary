@@ -12,14 +12,12 @@ export const formatStringDate = (dateAsString: string | null) => {
     years: dateNow.diff(dateAsJs, 'years')
   }
 
-  console.log('diff', diff)
-
-  if ( diff.hours <= 1) {
+  if ( diff.hours < 1) {
     return `${diff.minutes} minutes ago`;
-  } else if ( diff.days <= 1) {
+  } else if ( diff.days < 1) {
     return `${diff.hours} hours ago`;
   } else if ( diff.days < 7) {
-    return `${diff.days} days ago`;
+    return `${diff.days} day${diff.days > 1 ? 's' : ''} ago`;
   } else if (dateAsJs.get('year') === dateNow.get('year')) {
     return `${dateAsJs.format("DD")} ${MONTHS_SHORT[dateAsJs.get("M")]}`
   } else {
